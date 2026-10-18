@@ -54,7 +54,7 @@ python src/who_blocks_sleep.py
 本机需要 Python 3.8+ 与 PyInstaller：
 
 ```bash
-pip install pyinstaller
+pip install -r requirements-build.txt
 build.bat
 ```
 
