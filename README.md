@@ -1,5 +1,10 @@
 # 谁在阻止休眠 · who-blocks-sleep
 
+[![Release](https://img.shields.io/github/v/release/yc-2018/who-blocks-sleep?color=2F6FED)](https://github.com/yc-2018/who-blocks-sleep/releases/latest)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6)
+![Python](https://img.shields.io/badge/python-3.8%2B-3776AB)
+![License](https://img.shields.io/github/license/yc-2018/who-blocks-sleep)
+
 > 一个 Windows 小工具：查清楚是哪个程序在阻止电脑休眠 / 关屏，然后一键结束它。
 
 Windows 的「电源和睡眠」设置看起来一切正常，电脑却整夜不睡、电池悄悄耗光。系统其实记录了每个程序发出的**电源请求（Power Request）**，只是把这些信息藏在 `powercfg` 的命令行输出里，还得管理员权限才看得到。
@@ -29,7 +34,7 @@ Windows 的「电源和睡眠」设置看起来一切正常，电脑却整夜不
 
 ## 下载与运行
 
-从 [Releases](../../releases) 下载 `who-blocks-sleep.exe`，双击运行。
+从 [Releases](https://github.com/yc-2018/who-blocks-sleep/releases/latest) 下载 `who-blocks-sleep.exe`，双击运行。
 
 单文件、免安装、无需 Python 环境。**启动时会弹出 UAC 确认，必须点「是」**——非管理员读不到电源请求的详细信息。
 
