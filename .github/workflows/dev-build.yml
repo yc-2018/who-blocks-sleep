@@ -31,16 +31,17 @@ jobs:
 
     steps:
       - name: 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: 安装 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
+          cache-dependency-path: requirements-build.txt
 
       - name: 安装 PyInstaller
-        run: python -m pip install --upgrade pip pyinstaller
+        run: python -m pip install --upgrade pip -r requirements-build.txt
 
       # 把 APP_VER 从 "1.0" 改成 "dev+<sha>"，dev 版在标题栏就能看出是哪次构建
       - name: 写入开发版版本号
@@ -90,7 +91,7 @@ jobs:
           Write-Output $hash
 
       - name: 上传构建产物
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: dev-${{ github.sha }}
           path: dist/*
