@@ -4,6 +4,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6)
 ![Python](https://img.shields.io/badge/python-3.8%2B-3776AB)
 ![License](https://img.shields.io/github/license/yc-2018/who-blocks-sleep)
+[![dev-build](https://github.com/yc-2018/who-blocks-sleep/actions/workflows/dev-build.yml/badge.svg)](https://github.com/yc-2018/who-blocks-sleep/actions/workflows/dev-build.yml)
 
 > 一个 Windows 小工具：查清楚是哪个程序在阻止电脑休眠 / 关屏，然后一键结束它。
 
@@ -37,6 +38,8 @@ Windows 的「电源和睡眠」设置看起来一切正常，电脑却整夜不
 从 [Releases](https://github.com/yc-2018/who-blocks-sleep/releases/latest) 下载 `who-blocks-sleep.exe`，双击运行。
 
 单文件、免安装、无需 Python 环境。**启动时会弹出 UAC 确认，必须点「是」**——非管理员读不到电源请求的详细信息。
+
+想试最新代码：每次推送到 `main` 都会自动构建 [dev 预发布版](https://github.com/yc-2018/who-blocks-sleep/releases/tag/dev)（标题栏显示 `dev+<提交号>`，可能不稳定）。
 
 ## 从源码运行
 
